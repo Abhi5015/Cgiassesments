@@ -73,7 +73,7 @@ public class TC_002 {
         }
 
         driver.findElement(By.id("input-firstname")).clear();
-        driver.findElement(By.id("input-firstname")).sendKeys("Akash");
+        driver.findElement(By.id("input-firstname")).sendKeys("Abhijeet");
 
         // 2. Last Name
         WebElement lastName = driver.findElement(By.id("input-lastname"));
@@ -89,16 +89,16 @@ public class TC_002 {
         }
 
         driver.findElement(By.id("input-lastname")).clear();
-        driver.findElement(By.id("input-lastname")).sendKeys("Mangond");
+        driver.findElement(By.id("input-lastname")).sendKeys("Saurabh");
 
         // 3. Email → to avoid "already registered" error, make unique email each run
         WebElement email = driver.findElement(By.id("input-email"));
-        String uniqueEmail = "akash" + System.currentTimeMillis() + "@gmail.com";
+        String uniqueEmail = "sourabhijeet498" + System.currentTimeMillis() + "@gmail.com";
         email.sendKeys(uniqueEmail);
 
         // 4. Telephone
         WebElement telephone = driver.findElement(By.id("input-telephone"));
-        telephone.sendKeys("9876543210");
+        telephone.sendKeys("7549045015");
 
         System.out.println("Personal details entered successfully");
 
